@@ -1,2 +1,51 @@
 # Codewars-RISC-V
+ATTENTION! Be careful when peeping my solutions if you haven't already solved these tasks. If you rewrite my code verbatim you may have a chance to get a ban on the platform for cheating (takes into account spaces, newlines, brackets and similar variable names).
+
 My assignment solutions of Codewars tasks by using RISC-V.
+
+[![Profile badge](https://www.codewars.com/users/HungryVovka/badges/large)](https://www.codewars.com/users/HungryVovka)
+
+Orher programming languages sollutions:
+| Language                  | Link                                                             |  Current rank   |
+| ------------------------- |------------------------------------------------------------------|:---------------:|
+| *С*                       | https://github.com/HungryVovka/Codewars-C                        | 4 kyu           |
+| *С#*                      | https://github.com/HungryVovka/Codewars-C-sharp                  | 4 kyu           |
+| *С++*                     | https://github.com/HungryVovka/Codewars-C-plusplus               | 7 kyu           |
+| *СoffeeScript*            | https://github.com/HungryVovka/Codewars-CoffeeScript             | 5 kyu           |
+| *Elixir*                  | https://github.com/HungryVovka/Codewars-Elixir                   | 5 kyu           |
+| *Elm*                     | https://github.com/HungryVovka/Codewars-Elm                      | 8 kyu           |
+| *F#*                      | https://github.com/HungryVovka/Codewars-F-sharp                  | 5 kyu           |
+| *Java*                    | https://github.com/HungryVovka/Codewars-Java                     | 7 kyu           |
+| *JavaScript*              | https://github.com/HungryVovka/Codewars-JavaScript               | 3 kyu           |
+| *Lua*                     | https://github.com/HungryVovka/Codewars-Lua                      | 7 kyu           |
+| *Pascal*                  | https://github.com/HungryVovka/Codewars-Pascal                   | 6 kyu           |
+| *PHP*                     | https://github.com/HungryVovka/Codewars-PHP                      | 5 kyu           |
+| *Python*                  | https://github.com/HungryVovka/Codewars-Python                   | 3 kyu           |
+| *Rust*                    | https://github.com/HungryVovka/Codewars-Rust                     | 7 kyu           |
+| *Shell*                   | https://github.com/HungryVovka/Codewars-Shell                    | 7 kyu           |
+| *SQL*                     | https://github.com/HungryVovka/Codewars-SQL                      | 4 kyu           |
+| *TypeScript*              | https://github.com/HungryVovka/Codewars-TypeScript               | 6 kyu           |
+| *VisualBasic*             | https://github.com/HungryVovka/Codewars-VisualBasic              | 5 kyu           |
+
+Codewars is a platform that helps you learn, train, and improve your coding skills by solving programming tasks of many types and difficulty levels. You choose how you would like to learn. Do you want to take on increasingly difficult challenges? Maybe you prefer training through repetition and by improving your solutions. After solving a task, compare your answer with other users and learn from them or help less experienced users by answering their questions.
+
+By following this tutorial, you will learn how to create a new account on Codewars, configure it for an optimal training experience, and become familiar with basic elements of the user interface. Soon you will be able to face the challenges collected in Codewars' library and start learning!
+
+# License
+Tasks are the property of Codewars (https://www.codewars.com/) 
+and users of this resource.
+
+All solution code in this repository 
+is the personal property of Vladimir Rukavishnikov
+(vladimirrukavishnikovmail@gmail.com).
+
+Copyright (C) 2026 Vladimir Rukavishnikov
+
+This file is part of the HungryVovka/Codewars-RISC-V
+(https://github.com/HungryVovka/Codewars-RISC-V)
+
+License is GNU General Public License v3.0
+(https://github.com/HungryVovka/Codewars-RISC-V/blob/main/LICENSE)
+
+You should have received a copy of the GNU General Public License v3.0
+along with this code. If not, see http://www.gnu.org/licenses/

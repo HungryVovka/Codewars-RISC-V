@@ -40,6 +40,47 @@ done:
     ret
     
 
+# or
+
+.section .text
+.global find_smallest_int
+
+# int find_smallest_int(const int *v, size_t n)
+# a0 = v (pointer to array of integers)
+# a1 = n (number of elements; n >= 1 per problem statement)
+# return = a0 (smallest integer in the array)
+
+find_smallest_int:
+    # Load first element as initial minimum
+    lw t0, 0(a0)    # t0 = current minimum = v[0]
+    li t1, 1        # t1 = i = 1 (start from second element)
+    mv t2, a0       # t2 = base pointer (keep)
+    
+loop:
+    bge t1, a1, done      # Branch if Greater/Equal: if i >= n, exit loop
+    
+    # Compute address of v[i]: base + i*4
+    slli t3, t1, 2        # t3 = i *4 (byte offset)
+    add t3, t2, t3        # t3 = &v[i]
+    
+    lw t4, 0(t3)          # t4 = v[i] (current element)
+    
+    # Comprare with current minimum: if t4 < t0, update minimum
+    blt t4, t0, update_min
+    j next_iter
+    
+update_min:
+    mv t0, t4             # t0 = new minimum
+
+next_iter:
+    addi t1, t1, 1        # i++
+    j loop
+    
+done:
+    mv a0, t0       # Move result (minimum) into return register a0
+    ret
+    
+
 # -----------------------------------------------------------
 # License
 # Tasks are the property of Codewars (https://www.codewars.com/) 

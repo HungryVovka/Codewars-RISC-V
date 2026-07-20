@@ -1,36 +1,30 @@
 # -----------------------------------------------------------
-Complete the function which converts a binary number (given as a string) to a decimal number.
+# Terminal game move function
+# In this game, the hero moves from left to right. The player 
+# rolls the die and moves the number of spaces indicated by the die two times.
+# 
+# Create a function for the terminal game that takes the current position 
+# of the hero and the roll (1-6) and return the new position.
+# 
+# Example:
+# move(3, 6) should equal 15
 # -----------------------------------------------------------
 
-.global bin2dec
+.global move
 
-# <-- A0 unsigned long bin2dec((A0) const char *bin) -->
-# Converts null-terminated binary string to unsigned long
-# Arguments: a0 = pointer to binary string
-# Returns: a0 = answer
-# Complexity: O(n)
-
-bin2dec:
-
-    li t0, 0          # t0 <- answer = 0
-    mv t1, a0         # t1 <- strptr = pointer to input string
-
-loop:
-    lb t2, 0(t1)      # t2 <- load current character
-    beqz t2, done     # if '\0' -> end
-
-    addi t2, t2, -48  # convert ASCII '0'/'1' -> 0/1
-    slli t0, t0, 1    # answer *= 2
-    add t0, t0, t2    # answer += bit
-
-    addi t1, t1, 1    # move to next character
-    j loop
-
-done:
-    mv a0, t0         # move answer to return register
-    ret
-
-# -----> endof bin2dec <-----
+# unsigned short move(unsigned short pos, unsigned short roll)
+# a0 = current position of the hero
+# a1 = dice roll value (1-6)
+# return: a0 = new position after moving twice
+move:
+    # Multiply roll by 2 to get total steps
+    add a1, a1, a1      # a1 = roll * 2
+    
+    # Add total steps to current position
+    add a0, a0, a1      # a0 = pos + (roll * 2)
+    
+    ret                 # return new position in a0
+    
 
 # -----------------------------------------------------------
 # License
